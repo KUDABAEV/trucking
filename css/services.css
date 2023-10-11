@@ -1,0 +1,233 @@
+.services {
+
+}
+
+.services__container {
+    max-width: 100vw;
+}
+
+.services__items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.services__title {
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 13px 0;
+    text-align: center;
+    color: #2E2E2E;
+}
+.services__details {
+    position: relative;
+    padding-right: 14px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #2E2E2E;
+}
+
+.services__details:after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 8px;
+    height: 7px;
+    background: url("./../img/iconDown.svg") center no-repeat;
+}
+.services__details_modi {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    max-width: 257px;
+    margin-bottom: 19px;
+    color: #353535;
+    text-align: center;
+}
+.services__order {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #3284FF;
+    cursor: pointer;
+    border-bottom: 1px solid #3284FF;
+    max-width: 144px;
+}
+.services__order_form {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #3284FF;
+    cursor: pointer;
+    border-bottom: 1px solid #3284FF;
+    max-width: 220px;
+}
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 116px 31px 30px 31px;
+}
+.services__fill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__item_form {
+    padding: 33px 4px;
+    border: 1px solid #F2F2F2;
+    border-radius: 17px;
+    margin: 0 15px 70px;
+}
+.services__text_form {
+    margin: 0 0 14px 0;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23.8px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.services__item_form .services__text {
+    max-width: 280px;
+}
+
+.services__item_trucking {
+    background: #F2F2F2 url("./../img/trucking1.png") center 30px/100px no-repeat;
+}
+.services__item_intercity {
+    background: #F2F2F2 url("./../img/trucking2.png") center 30px/115px no-repeat;
+}
+.services__item_delivery {
+    background: #F2F2F2 url("./../img/trucking3.png") center 10px/115px no-repeat;
+}
+.services__item_reefer {
+    background: #F2F2F2 url("./../img/trucking4.png") center 10px/92px no-repeat;
+}
+.services__item_shipping {
+    background: #F2F2F2 url("./../img/trucking5.png") center 10px/112px no-repeat;
+}
+.services-bottom__text {
+    margin: 0 0 134px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 15px;
+    color: #353535;
+}
+@media (min-width: 768px) {
+    .services__container {
+        padding: 0 24px;
+    }
+    .services__items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .services__item {
+        align-items: flex-start;
+        border-radius: 17px;
+        width: 351.5px;
+        height: 256px;
+        padding: 50px 48px 60px 45px;
+    }
+    .services__item_form {
+        padding: 44px 22px 42px 29px;
+        margin: 0;
+    }
+    .services__text {
+        text-align: left;
+        margin: 0 0 25px 0;
+    }
+    .services__text_form {
+        text-align: left;
+    }
+    .services__details_modi {
+        text-align: left;
+    }
+    .services__item_trucking {
+        background: #F2F2F2 url("./../img/trucking1.png") 220px 120px/119px no-repeat;
+    }
+    .services__item_intercity {
+        background: #F2F2F2 url("./../img/trucking2.png") 200px 130px/116px no-repeat;
+    }
+    .services__item_delivery {
+        background: #F2F2F2 url("./../img/trucking3.png") 200px 130px/100px no-repeat;
+    }
+    .services__item_reefer {
+        background: #F2F2F2 url("./../img/trucking4.png") 200px 140px/92px no-repeat;
+    }
+    .services__item_shipping {
+        background: #F2F2F2 url("./../img/trucking5.png") 200px 120px/112px no-repeat;
+    }
+    .services-bottom__text {
+        margin: 0 0 170px 0;
+    }
+    .services__fill {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1130px) {
+    .services__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .services__items {
+        gap: 20px;
+    }
+    .services__item {
+        width: 630px;
+    }
+    .services__text_form {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 290px;
+    }
+    .services__item_trucking {
+        background: #F2F2F2 url("./../img/trucking1.png") 400px 55px/194px no-repeat;
+    }
+    .services__item_intercity {
+        background: #F2F2F2 url("./../img/trucking2.png") 400px 70px/187px no-repeat;
+    }
+    .services__item_delivery {
+        background: #F2F2F2 url("./../img/trucking3.png") 400px 70px/162px no-repeat;
+    }
+    .services__item_reefer {
+        background: #F2F2F2 url("./../img/trucking4.png") 400px 70px/157px no-repeat;
+    }
+    .services__item_shipping {
+        background: #F2F2F2 url("./../img/trucking5.png") 400px 60px/150px no-repeat;
+    }
+    .services-bottom__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0 216px;
+    }
+    .services__fill {
+        flex-direction: row;
+        align-items: center;
+    }
+    .services__details_modi {
+        margin-bottom: 0;
+    }
+}
+

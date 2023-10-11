@@ -1,0 +1,124 @@
+.car-park {
+    position: relative;
+    background-color: #040D21;
+}
+
+
+.car-park__content{
+    padding: 71px 0 276px 0;
+}
+
+.car-park-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url("./../img/carParkImg.png") bottom  no-repeat;
+}
+
+.car-park__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.car-park__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #8193B2;
+    padding: 0 40px;
+    margin-bottom: 49px;
+}
+
+.car-park__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-left: 22px;
+}
+.car-park__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 0 47px;
+}
+.car-park__item:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: #3284FF;
+    border-radius: 50%;
+}
+
+@media (min-width: 500px) {
+    .car-park__items {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+    .car-park__item {
+        flex: 0 1 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .car-park-bg {
+        background: url("./../img/carParkImg.png") top right/300px  no-repeat;
+    }
+    .car-park__content {
+        padding: 100px 0;
+    }
+    .car-park__title {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .car-park__text {
+        padding: 0;
+        text-align: left;
+    }
+    .car-park__items {
+        flex-wrap: wrap;
+    }
+    .car-park__item {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1065px) {
+    .car-park__inner {
+        position: relative;
+    }
+    .car-park-bg {
+        background-image: url("./../img/carParkImg.png");
+        background-position: 100% 150%;
+        background-repeat: no-repeat;
+    }
+    .car-park__title {
+        text-align: center;
+    }
+    .car-park__text {
+        font-size: 17px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .car-park__items {
+
+    }
+    .car-park__item {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

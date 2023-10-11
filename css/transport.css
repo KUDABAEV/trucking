@@ -1,0 +1,48 @@
+.transport {
+    padding: 135px 0 21px;
+}
+
+.transport__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 21px;
+    color: #2E2E2E;
+}
+.transport__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #353535;
+    padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .transport {
+        padding: 170px 0 80px;
+    }
+    .transport__title {
+        font-size: 30px;
+        line-height: 42px;
+        color: #000000;
+    }
+    .transport__text {
+        font-size: 17px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .transport {
+        margin-bottom: 90px;
+    }
+    .transport__title {
+        padding: 0 312px;
+    }
+    .transport__text {
+        padding: 0 303px;
+    }
+}
